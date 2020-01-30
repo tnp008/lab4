@@ -4,7 +4,8 @@
  */
 
 exports.view = function(req, res){
-  res.render('index', {
-  	'name': '',
+	var nameToShow = reg.params.userName;
+  res.render("hello", {
+  	"name": nameToShow
   });
 };
